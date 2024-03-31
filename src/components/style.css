@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #E8EBF5;
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+  #loading {
+    font-size: 30px;
+  }
+
+  .chat-box {
+    margin: 80px auto;
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 600px;
+  }
+
+
+  .chat-box-header {
+    background-color: #bdecbd;
+    color: #4b684b;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .chat-box-body {
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(100% - 145px);
+  }
+
+  .chat-box-body .message,
+  .chat-box-body .response {
+    margin-bottom: 16px;
+  }
+
+
+  .message {
+    color: rgb(44, 41, 41);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+  }
+
+  .message span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #bdecbd;
+    padding: 20px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+  }
+
+ .response {
+  background-color: #3f523f;
+    color: white;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+  }
+
+.response {
+    line-height: 1.5em;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+  }
+  .chat-box-footer {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #bdecbd;
+    border-top: 1px solid #3f523f;
+    padding: 8px 16px;
+  }
+
+  .chat-box-footer input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #3f523f;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .chat-box-footer button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: #3f523f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .chat-box-footer button:hover {
+    background-color: #171d17;
+  }
+
+  .chat-box-footer button:active {
+    background-color: #3f523f;
+  }
+  
+  
+  .form__radio-input {
+    display: none;
+  }
+  
+  .form__radio-label {
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .form__radio-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #bdecbd;
+    background-color: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form__radio-input:checked + .form__radio-label .form__radio-button {
+    background-color: #bdecbd; 
+  }
+  
+  .form__radio-input:checked + .form__radio-label .form__radio-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff; 
+  }
+  
+  .form__radio-label:hover .form__radio-button {
+    border-color: #a798ce;
+  }
+  
+  .form__radio-label:hover .form__radio-button::after {
+    background-color: #a798ce;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bdecbd; /* Change border color */
+  }
+  
+  button[type="submit"] {
+    background-color: #bdecbd;
+    color: #0a0a0a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #a798ce;
+  }
+  
+  
